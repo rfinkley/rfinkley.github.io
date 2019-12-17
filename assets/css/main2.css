@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.header {
+    height: 100;
+}
+.nav
+.main
+.content
+.footer
