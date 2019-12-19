@@ -1,15 +1,66 @@
-body {
+.container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+        "header header header header header header"
+        "nav nav nav nav nav nav"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+    gap: .5rem;
     margin:0;
     padding:0;
+    background-color: #fff;
+}
+
+.container > div {
+    background-color: #ccc;
 }
 
 .header {
-    height: 100px;
-    background-color: grey;
+    justify-self: center;
+    grid-area: header;
+    height: 5rem;
 }
-.nav
-.main
-.content
-.footer
+
+nav {
+    height: 2rem;
+    grid-area: nav;
+    display: flex;
+    place-self: center;
+}
+
+.nav_item {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+main {
+    grid-area: main;
+    border-top: 2px solid #ccc;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main > img {
+    height: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.content {
+    grid-area: content;
+    margin: 1rem 1rem;
+}
+
+footer {
+    grid-area: footer;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 8px solid black;
+    background-color: #ccc;
+    text-align: center;
+}
