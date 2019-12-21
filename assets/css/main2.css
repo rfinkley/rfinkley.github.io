@@ -1,3 +1,30 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777;
+    font-size: 18px;
+    background-image: url(../images/herringbone.png);
+}
+
+h1 {
+    color: #ccc;
+}
+
+a {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+
+a:visited {
+    color: orange;
+}
+
 .container {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
@@ -17,9 +44,15 @@
 }
 
 .header {
-    justify-self: center;
+    display: flex;
     grid-area: header;
     height: 5rem;
+    background-color: #4aaaa5;
+    justify-content: center;
+}
+
+.header h1 {
+    align-self: center;
 }
 
 nav {
@@ -32,15 +65,20 @@ nav {
 .nav_item {
     list-style: none;
     margin: 0 1rem;
+    align-self: center;
 }
 
 main {
     grid-area: main;
     border-top: 2px solid #ccc;
+    margin-top: 1rem;
 }
 
 main h2 {
     text-align: center;
+    margin: 2rem 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: .5rem;
 }
 
 main > img {
@@ -57,10 +95,20 @@ main > img {
 
 footer {
     grid-area: footer;
+    display: flex;
     width: 100%;
     position: fixed;
     bottom: 0;
     border-top: 8px solid black;
     background-color: #ccc;
-    text-align: center;
+    justify-content: center;
+    height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {    
+        grid-template-areas: 
+            ". header header nav nav nav"
+            ". main main main main ."
+            "footer footer footer footer footer footer";
 }
