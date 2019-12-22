@@ -118,8 +118,9 @@ footer {
 @media screen and (min-width: 768px) {
     .container {    
         grid-template-areas: 
-            ". header header nav nav nav"
+            "header header header header header header"
             ". main main main main ."
             "footer footer footer footer footer footer";
     }
+
 }
