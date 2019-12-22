@@ -30,7 +30,6 @@ a:visited {
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-areas: 
         "header header header header header header"
-        "nav nav nav nav nav nav"
         "main main main main main main"
         "footer footer footer footer footer footer";
     gap: .5rem;
@@ -39,45 +38,56 @@ a:visited {
     background-color: #fff;
 }
 
-.container > div {
-    background-color: #ccc;
-}
-
 .header {
-    display: flex;
+    display: grid;
     grid-area: header;
-    height: 5rem;
-    background-color: #4aaaa5;
-    justify-content: center;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+        "logo logo logo logo logo logo"
+        "nav nav nav nav nav nav";
 }
 
-.header h1 {
-    align-self: center;
+header {
+    grid-area: logo;
+    background-color: #4aaaa5;
+    text-align: center;
+    height: 3rem;
+
+}
+
+header h1 {
+    display: inline;
+    vertical-align: middle;
 }
 
 nav {
     height: 2rem;
     grid-area: nav;
+}
+
+nav ul {
     display: flex;
-    place-self: center;
+    place-content: center;
+    margin-top: .25rem;
 }
 
 .nav_item {
     list-style: none;
     margin: 0 1rem;
-    align-self: center;
 }
 
 main {
     grid-area: main;
-    border-top: 2px solid #ccc;
     margin-top: 1rem;
+    /* margin-bottom: 5rem; */
+    height: 100%;
 }
 
 main h2 {
     text-align: center;
     margin: 2rem 0;
-    border-bottom: 2px solid #ccc;
     padding-bottom: .5rem;
 }
 
@@ -99,7 +109,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    border-top: 8px solid black;
+    border-top: 8px solid #4aaaa5;
     background-color: #ccc;
     justify-content: center;
     height: 50px;
@@ -111,4 +121,5 @@ footer {
             ". header header nav nav nav"
             ". main main main main ."
             "footer footer footer footer footer footer";
+    }
 }
