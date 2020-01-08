@@ -157,6 +157,11 @@ footer, .push {
     margin-bottom: 40px;
 }
 
+img.portfolio {
+    height: 100px;
+    width: 150px;
+}
+
 
 .thumbnail_label {
     background-color:#4aaaa5 ;

@@ -1,0 +1,128 @@
+/* General Styles */
+
+body {
+    color: #777777;
+    background-image: url(../images/herringbone.png);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a:visited {
+    color: orange;
+}
+
+h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+header {
+    border-bottom: solid 2px #ccc;
+    background-color: #fff;
+}
+
+#logo {
+    background-color: #4aaaa5;
+    color: #fff;
+}
+
+.portrait {
+    height: 250px;
+    margin: 0 30%;
+}
+
+#index_main {
+   min-height: 410px ;
+}
+
+main {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    min-height: 1900px;
+    overflow: hidden;
+}
+
+.main_title {
+    margin-top: 1.25rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #4aaaa5;
+    border: none;
+}
+
+footer {
+    background-color: #666;
+    border-top: #4aaaa5 8px solid;
+    color: #fff;
+}
+
+form {
+    margin: 2rem 2rem;
+}
+
+.form-control {
+    width: 400px;
+}
+
+#message {
+    width: 100%;
+}
+
+@media all and (min-width:768px) {
+
+    nav {
+        padding: 28px;
+        left: 30%;
+    }
+
+    #logo {
+        width: 4rem;
+        left: 8%;
+        height: 100px;
+        padding: 28px;
+    }
+
+    .portrait {
+        margin: 0;
+    }
+
+    .main_title {
+        text-align: left!important;
+    }
+
+    main {
+        min-height: 1150px;
+    }
+
+    @media all and (min-width:769px) and (max-width: 991px) {
+
+        nav {
+            left: 8%;
+        }
+
+        #message {
+            width: 150%;
+        }
+
+    }
+
+    @media all and (min-width: 992px) {
+
+        nav {
+            left: 30%;
+        }
+
+        #message {
+            width: 180%;
+        }
+
+    }
+
+    @media all and (min-width: 1200px) {
+        main {
+            min-height: 825px;
+        }
+
+    }
+
+}
