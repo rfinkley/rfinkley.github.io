@@ -15,6 +15,10 @@ a {
     color: #4aaaa5;
 }
 
+div.portfolio_thumbnail a {
+    color: white;
+}
+
 a:visited {
     color: orange;
 }
