@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector</title>
+  <link rel="icon" href="./assets/images/favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="./assets/css/crystalgame.css">
+</head>
+
+<body>
+  <nav class="navbar bg-dark" id="nav">
+    <div>
+      <img class="navbar-brand d-inline-block test" src="./assets/images/logo.svg" width="75" height="75" alt="">
+    </div>
+    <div class="d-inline-block"><span class="d-inline-block" id="title">Crystal Collector</span></div>
+    <div id="resetButton" >
+      <button id="resetBtn" type="button" class="btn btn-warning">Reset</button>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="statDisplay text-center" id="comp">
+          <h1 class="display-1" id="statComp"></h1>
+        </div>
+      </div>
+      <div class="col">
+        <div class="statDisplay text-center" id="player">
+          <h1 class="display-1" id="statPlayer"></h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <h4 id="wins" class="display-4">Wins: <span class="display-3" id="winsVal"></span></h4>
+      </div>
+      <div class="col text-center">
+        <h4 id="losses" class="display-4">Losses: <span class="display-3" id="lossesVal"></span></h4>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card jewel-img">
+          <img data- src="./assets/images/ruby.svg" class="card-img-top" id="ruby" alt="ruby">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card jewel-img">
+          <img src="./assets/images/diamond.svg" class="card-img-top" id="diamond" alt="diamond">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card jewel-img">
+          <img src="./assets/images/jasper.svg" class="card-img-top" id="jasper" alt="jasper">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card jewel-img">
+          <img src="./assets/images/emerald.svg" class="card-img-top" id="emerald" alt="emerald">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Instruction Modal -->
+  <div class="modal fade" id="gameInstructions" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Crystal Collector</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p><em>Game Rules:</em></p>
+          <p>You are given a target score to reach. Each gem on the screen is worth a certain value of points. Each time you click on one of the gems your score will change.</p>
+          <p>If you reach the target score, you win.</p>
+          <p>If you go over the target score you lose.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/crystalgame.js"></script>
+</body>
+
+</html>

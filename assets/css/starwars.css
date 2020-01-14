@@ -1,0 +1,50 @@
+.navbar {
+    background-image: url("/assets/images/starwarsBG.jpg");
+    height: 125px;
+    justify-content: left;
+}
+
+.title{
+    color: white;
+    font-weight: 400;
+    padding-top:2rem;
+}
+
+.card {
+    width: 12rem;
+    margin: 2rem;
+    color: black;
+    
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-body p {
+    margin-bottom: 0;
+}
+
+.card-img-top {
+    width: 11.75rem;
+    height: 8rem;
+}
+
+.hero {
+    border: 2px solid lightgreen;
+}
+
+.villan {
+    border: 2px solid red;
+}
+
+.charStats {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+body {
+    background-image: url(/assets/images/stars.jpg);
+    color: white;
+}
+
