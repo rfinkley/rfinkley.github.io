@@ -85,8 +85,8 @@ function attack() {
     //Subtract player attack value from opponent's current HP value
     curCompHP -= curAttackPower;
     curCharHP -= curCompAttack;
-    $(`div#${playerHPtext} h4.characterHP`).text(curCharHP);
-    $(`div#${compHPtext} h4.characterHP`).text(curCompHP);
+    $(`div#${playerHPtext} p.characterHP`).text(curCharHP);
+    $(`div#${compHPtext} p.characterHP`).text(curCompHP);
     $(".chosenOneAttack").text(objCharacters.charName[chosenOne] + ' hit ' + objCharacters.charName[defender] + ' for ' + curAttackPower + ' points.');
     $(".defenderAttack").text(objCharacters.charName[defender] + ' hit ' + objCharacters.charName[chosenOne] + ' for ' + curCompAttack + ' points.');
     if (curCompHP < 1) {
@@ -95,7 +95,7 @@ function attack() {
         $("[data-vitals|='dead']").attr("data-fightStatus", "defeated");
         $("[data-fightStatus|='defeated']").css("visibility", "hidden");
         $("[data-fightStatus|='defeated']").appendTo(".charSelect");
-        $(`div#${y} h4.characterHP`).text(objCharacters.charHP[x]);
+        $(`div#${y} p.characterHP`).text(objCharacters.charHP[x]);
         enemies--;
         isDefenderSelected = false;
         isFighting = false;
@@ -103,14 +103,14 @@ function attack() {
         $(".chosenOneAttack").text('You have defeated ' + objCharacters.charName[defender] + '. You can pick another character to attack.');
         $(".defenderAttack").text('');
         if (enemies == 0) {
-            $(`div#${z} h4.characterHP`).text(objCharacters.charHP[p]);
+            $(`div#${z} p.characterHP`).text(objCharacters.charHP[p]);
             $("#reset").css("visibility", "visible");
             console.log("Game Win");
         }
     } else if (curCharHP < 1) {
         console.log("Player Defeated");
-        $(`div#${z} h4.characterHP`).text(objCharacters.charHP[p]);
-        $(`div#${y} h4.characterHP`).text(objCharacters.charHP[x]);
+        $(`div#${z} p.characterHP`).text(objCharacters.charHP[p]);
+        $(`div#${y} p.characterHP`).text(objCharacters.charHP[x]);
         isFighting = false;
         $("#reset").css("visibility", "visible");
         $(".chosenOneAttack").text("You've been defeated. GAME OVER");
