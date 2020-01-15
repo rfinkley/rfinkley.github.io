@@ -1,17 +1,17 @@
 .navbar {
     background-image: url("/assets/images/starwarsBG.jpg");
-    height: 125px;
+    height: 5rem;
     justify-content: left;
 }
 
 .title{
     color: white;
-    font-weight: 400;
-    padding-top:2rem;
+    font-weight: 100;
+    padding-top:.25rem;
 }
 
 .card {
-    width: 12rem;
+    width: 8rem;
     margin: 2rem;
     color: black;
     
@@ -19,6 +19,7 @@
 
 .card-body {
     padding: 0;
+    font-size: .85rem;
 }
 
 .card-body p {
@@ -26,8 +27,8 @@
 }
 
 .card-img-top {
-    width: 11.75rem;
-    height: 8rem;
+    width: 7.75rem;
+    height: 5rem;
 }
 
 .hero {
@@ -46,5 +47,9 @@
 body {
     background-image: url(/assets/images/stars.jpg);
     color: white;
+}
+
+.charSelect, .enemies {
+    height: 12rem;
 }
 

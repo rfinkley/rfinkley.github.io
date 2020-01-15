@@ -17,35 +17,42 @@
     </script>
     <title>Star Wars RPG</title>
 </head>
+
 <body>
     <nav class="navbar">
         <h2 class="d-inline-block display-4 title">Star Wars RPG</h2>
     </nav>
-    <div class="charSelect"></div>
-    <div class="enemies">
-        <h4>Enemies Available to Attack</h4>
-    </div>
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div class="playChar">
-                    <h4>Your Character</h4>
-                </div>
+            <div class="col-12 charSelect d-flex justify-content-around"></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center">Enemies Available to Attack</h4>
+                <div class="enemies d-flex justify-content-center"></div>
             </div>
-            <div class="col-6">
-                <div class="fightSection">
-                    <h4>Fight Section</h4>
-                    <div class="defender">
-                        <!-- <p>Defender</p> -->
+        </div>
+        <div class="row">
+            <div class="col-12 fightSection">
+                <h4 class="text-center">Fight Section</h4>
+                <div class="row">
+                    <div class="col-6">
+                        <h4 class="text-center">Your Character</h4>
+                        <div class="playChar d-flex justify-content-center"></div>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-center">Defender</h4>
+                        <div class="defender d-flex justify-content-center"></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="chosenOneAttack"></p>
-                <p class="defenderAttack"></p>
+                <p class="chosenOneAttack text-center"></p>
+                <p class="defenderAttack text-center"></p>
             </div>
+
         </div>
         <div class="row">
             <div class="col-12">
@@ -54,9 +61,11 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="./assets/javascript/starwars.js"></script>
 </body>
+
 </html>
