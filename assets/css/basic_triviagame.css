@@ -1,0 +1,62 @@
+body {
+    background-image: url(../images/oscar_award.png), url(../images/background.png);
+    background-position: right bottom, left bottom;
+    background-repeat: no-repeat, repeat;
+    color: #862A2D; 
+}
+
+.container {
+    margin-top: 4rem;
+    height: 45rem;
+    background-color: #C3B8A7;
+    border: #862A2D solid 2px;
+    border-radius: 5px;
+}
+
+#start {
+    height: 10rem;
+    width: 15rem;
+    background-color: #862A2D;
+    border: #EDDFB2 solid .20rem;
+    position: relative;
+    margin: 4rem auto 4rem auto;
+    padding-top: 2.2rem;
+    color: #EDDFB2;
+    font-size: 3rem;
+}
+
+#done {
+    height: 10rem;
+    width: 15rem;
+    background-color: #862A2D;
+    border: #EDDFB2 solid .20rem;
+    position: relative;
+    margin: 4rem auto 4rem auto;
+    padding-top: 2.2rem;
+    color: #EDDFB2;
+    font-size: 3rem;
+    visibility: hidden;
+}
+
+#reset {
+    height: 10rem;
+    width: 15rem;
+    background-color: #862A2D;
+    border: #EDDFB2 solid .20rem;
+    position: relative;
+    margin: 4rem auto 4rem auto;
+    padding-top: 2.2rem;
+    color: #EDDFB2;
+    font-size: 3rem;
+}
+
+#title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#timer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
