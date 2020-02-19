@@ -5,52 +5,64 @@
     <meta charset="UTF-8">
     <title>Robert Finkley | Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark nav-bg">
+        <a class="navbar-brand" href="./index.html"><h1>RF</h1></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
     <div class="wrapper">
-        <header>
-            <div class="header_container">
-                <div class="logo">
-                    <h1>Robert Finkley</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">About</a></li>
-                        <li class="separator">|</li>
-                        <li><a href="./portfolio.html">Portfolio</a></li>
-                        <li class="separator">|</li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <h1>About Me</h1>
-            <img id="portrait" src="./assets/images/portrait.jpg" alt="Portrait of Robert Finkley">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dicta neque, sapiente, nihil
-                corporis vel exercitationem maiores tenetur aliquid, unde itaque facilis atque at quidem magnam quia
-                maxime quod quos! Dolor animi, suscipit a, veniam voluptates molestias aspernatur ullam consequuntur,
-                praesentium autem harum vel fugit maiores totam. Nisi minus blanditiis neque quaerat itaque incidunt
-                repellat ad molestiae necessitatibus culpa, aliquid perferendis optio unde, doloremque dolorem quas.
-                Modi, qui nulla sunt voluptate doloremque mollitia cupiditate aliquid libero dolorem eaque, commodi est
-                perferendis quia, provident rerum enim? Quam corrupti dolores inventore ullam consequatur quos earum
-                sint. Sequi est corrupti vero nobis enim.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, hic? Dicta atque dolores magnam
-                possimus odit fuga corporis minima laboriosam qui eaque, excepturi magni expedita commodi quia quaerat
-                consequatur nulla corrupti eveniet ipsam? Dicta eius, quo exercitationem temporibus quis consequatur
-                veniam, ipsa velit aspernatur fugiat labore voluptatum, ad dolor? Ratione minima et id sequi velit rem
-                rerum, sint quis porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, asperiores fugit doloremque ea, recusandae
-                esse nostrum officia nihil quos animi porro neque, blanditiis vero aliquid accusamus quisquam explicabo
-                praesentium consectetur!</p>
-        </main>
-        <div class="push"></div>
+        <div id="iam">
+            <h1>Hi. I'm Robert Finkley. I'm a web developer, designer and writer.</h1>
+            <p><q>Most great people have achieved their greatest success just one step beyond their greatest
+                    failure.</q><br><em>—Napoleon Hill</em></p>
+        </div>
+        <div class="image">
+            <picture>
+                <source media="(min-width: 650px)" srcset="./assets/images/portrait_600x799.jpg">
+                <source media="(min-width: 465px)" srcset="/assets/images/portrait_450x599.jpg">
+                <img id="selfie" src="/assets/images/portrait_350x466.jpg" alt="self-portrait" style="width:auto;">
+            </picture>
+        </div>
+        <div class="main">
+            <h1>I'm currently a full stack web development student experienced in HTML5, CSS3, and JavaScript. I'm
+                seeking a poisition as a full-time front-end or back-end web developer.</h1>
+        </div>
+
     </div>
-    <footer>
-        Copyright &copy;
-    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
