@@ -1,10 +1,13 @@
+/* Page wrapper */
 .wrapper {
   height: 100vh;
   width: 100vw;
 }
 
+/* Sidebar */
 .sidebar {
-  height: 100%;
+  height: 100vh;
+  min-height: 800px;
   width: 100px;
   position: fixed;
   z-index: 1;
@@ -28,16 +31,8 @@
   display: block;
 }
 
-.label {
-  visibility: hidden;
-  position: relative;
-  top: -20px;
-  opacity: 0;
-  transition: transform .25s ease-in, opacity .25s ease-in;
-}
-
-.brand {
-  font-size: 3rem !important;
+.sidebar .brand {
+  font-size: 3rem;
   margin-right: 0;
   display: block;
   position: absolute;
@@ -63,8 +58,73 @@
   transform: translateY(-20px);
 }
 
+.label {
+  visibility: hidden;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  transition: transform .25s ease-in, opacity .25s ease-in;
+}
+
 .menu li a:hover .label {
   visibility: visible;
   transform: translateY(30px);
   opacity: 1;
+}
+
+/* Main content */
+main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  padding-top: 25%;
+  width: 100%;
+}
+
+/* Home page */
+@keyframes circle1 {
+  0% {background-color: currentColor;}
+  25% {background-color: red;}
+  50% {background-color: cadetblue;}
+  75% {background-color: red;}
+  100% {background-color: cadetblue;}
+}
+
+/* .circle1  {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 5px;
+  right: 10px;
+  opacity: .30;
+  background-color: cadetblue;
+  border-radius: 50%;
+  animation-name: circle1;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+} */
+
+.portrait {
+  position: relative;
+  top: -200px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: url("../images/portrait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
