@@ -5,7 +5,7 @@
 
 h1 {
   margin: 1rem 0;
-  font-family: serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -47,7 +47,7 @@ body {
 }
 
 .title {
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 .card {
