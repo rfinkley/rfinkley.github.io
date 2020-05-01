@@ -53,14 +53,21 @@ body {
 .card {
     background-color: #333;
     margin: 1rem;
+    border: none;
 }
 
 .card img {
     height: 12rem;
+    background-color: #000;
 }
 
 .card-body {
     padding: .5rem;
+    background-color: #000;
+}
+
+.card-body h5 {
+    color: #fff!important;
 }
 
 #iam {
