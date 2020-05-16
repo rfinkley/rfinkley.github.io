@@ -173,8 +173,9 @@ main {
   background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
   .portrait {
-    top: 0;
+    position: relative;
+    top: 0px;
   }
 }
