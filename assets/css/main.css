@@ -1,4 +1,12 @@
 /* Page wrapper */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.monogram {
+  font-family: 'Fredoka One', cursive;
+}
+
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -103,7 +111,7 @@ main {
   100% {background-color: cadetblue;}
 }
 
-/* .circle1  {
+.circle1  {
   position: absolute;
   height: 60px;
   width: 60px;
@@ -116,7 +124,7 @@ main {
   animation-duration: 6s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-} */
+}
 
 .portrait {
   position: relative;
@@ -127,4 +135,10 @@ main {
   background-image: url("../images/portrait.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 500px) {
+  .portrait {
+    top: 0;
+  }
 }
