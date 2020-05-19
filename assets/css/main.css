@@ -109,9 +109,15 @@ main {
   height: 100%;
 }
 
-.content {
+.home-content {
   padding-top: 25%;
   width: 100%;
+}
+
+.portfolio-content {
+  padding-top: 25%;
+  width: 100%;
+  overflow-y: scroll;
 }
 
 /* Home page */
@@ -237,4 +243,5 @@ main {
   }
   .home-text {
     width: 280px;
+  }
 }
