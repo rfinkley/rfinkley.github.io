@@ -13,13 +13,13 @@ body {
 
 
 .wrapper {
-  /* height: 100vh; */
-  /* width: 100vw; */
+  height: 100vh;
+  width: 100vw;
 }
 
 /* Sidebar */
 .sidebar {
-  /* height: 100vh; */
+  height: 100vh;
   min-height: 800px;
   width: 100px;
   position: fixed;
@@ -27,7 +27,7 @@ body {
   top: 0;
   left: 0;
   background-color: #fff;
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,9 +95,9 @@ body {
 /* Main content */
 main {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   position: absolute;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .section {
@@ -106,7 +106,7 @@ main {
   left: 0;
   margin-left: 100px;
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .home-content {
@@ -117,7 +117,7 @@ main {
 .portfolio-content {
   padding-top: 25%;
   width: 100%;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 /* Home page */
