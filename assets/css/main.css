@@ -255,7 +255,7 @@ main {
 }
 
 /* Add some padding inside the card container */
-.container {
+.card-container {
   display: flex;
   justify-content: center;
   padding: 2px 16px;
@@ -274,7 +274,7 @@ main {
 
 #contact-form-wrapper {
   text-align: start;
-  margin-bottom: 4rem;
+  margin: 4rem auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -313,9 +313,11 @@ input[type=submit]:hover {
 
 /* Footer */
 footer {
+  grid-area: footer;
   position: fixed;
   bottom: 0;
   left: 0;
+  height: 100px;
 }
 
 
