@@ -150,9 +150,9 @@ main {
   position: absolute;
   top: 0;
   left: 400;
-  width: 400px;
+  width: 300px;
   z-index: 4;
-  height: 400px;
+  height: 300px;
   border-radius: 100%;
   animation: spin-right 15s linear infinite;
 }
@@ -172,7 +172,7 @@ main {
 #orbit2 {
   position: absolute;
   top: 0;
-  left: 175px;
+  left: 100px;
   z-index: 3;
   width: 250px;
   height: 300px;
@@ -214,18 +214,6 @@ main {
   border-radius: 50%;
   animation: circle1 10s linear infinite;
 }
-
-/* .portrait {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  top: 0;
-  z-index: 1;
-  border-radius: 50%;
-  background-image: url("../images/portrait.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
 
 #portfolio {
   grid-area: portfolio;
@@ -274,8 +262,7 @@ main {
 }
 
 section {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 /* Footer */
