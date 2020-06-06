@@ -6,15 +6,16 @@
   <title>Robert Finkley | Web Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap" rel="stylesheet">
   <script crossorigin="anonymous" SameSite="none Secure" src="https://kit.fontawesome.com/5cc434ff75.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="wrapper">
-    <nav class="sidebar">
+  <body>
+  <!-- <div class="wrapper">
+    <nav class="navigation">
       <a class="brand text-center monogram" href="#">
         RF
       </a>
@@ -39,7 +40,7 @@
           <div class="row">
             <div class="col-sm-12 col-md-6 home-text">
               <h1 id="hiya">Hi! I'm Rob,</h1>
-              <p>I'm a recent web development program graduate. I'm experienced with full-stack web development using the MERN stack. I'm passionate about building modern web applications using accessible and clean code.</p>
+              <p>I'm a recent web development graduate. I'm experienced with full-stack web development using the MERN stack. I'm passionate about building modern web applications using accessible and clean code.</p>
             </div>
             <div class="col-sm-12 col-md-6 home-image">
               <div id=orbit1>
@@ -116,19 +117,92 @@
   <section class="section" id="about" data-visible="false"></section>
   <section class="section" id="contact" data-visible="false"></section>
   </main>
-  </div>
+  </div> -->
+  <header>
+    <nav>
+      <div class="brand">Navigation</div>
+      <ul class="navbar">
+        <li class="nav-item"><a href="#"><i class="fa fa-fw fa-user"></i>
+          <p class="label">About Me</p>
+        </a></li>
+        <li class="nav-item"><a href="#"><i class="fa fa-fw fa-pencil-ruler"></i>
+          <p class="label">Portfolio</p>
+        </a></li>
+        <li class="nav-item"><a href="#"><i class="fa fa-fw fa-envelope"></i>
+          <p class="label">Contact</p>
+        </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <div class="about-pic">
+        <div id=orbit1>
+          <div class="circle1"></div>
+        </div>
+        <div id="orbit2">
+          <div class="circle2"></div>
+        </div>
+        <div id="orbit3">
+          <div class="circle3"></div>
+        </div>
+        <!-- <div class="portrait"></div> -->
+      </div>
+      <div class="about-info">
+        <h1 class="section-header">Hi! I'm Rob</h1>
+        <p>I'm a recent web development graduate. I'm experienced with full-stack web development using the MERN stack. I'm passionate about building modern web applications using accessible and clean code.</p>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h1 class="section-header">Portfolio</h1>
+      <div class="projects-container">
+        <div class="card">
+          <img src="./assets/images/yoda.jpg" alt="Star Wars Project" height="150" width="150">
+          <div class="container">
+            <h4><a class="projects-link" href="./star_wars.html">Star Wars</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/hangman.jfif" alt="Hangman Project" height="150" width="150">
+          <div class="container">
+            <h4><a class="projects-link" href="./hangman.html">Hangman</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/trivia_quiz.jpeg" alt="Trivia Game Project" height="150" width="150">
+          <div class="container">
+            <h4><a class="projects-link" href="./basic_triviagame.html">Trivia Game</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/ruby.svg" alt="Crystal Collector Project" height="150" width="150">
+          <div class="container">
+            <h4><a class="projects-link" href="./crystals_collector.html">Crystal Collector</a></h4>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./assets/images/giphy.png" alt="Giphy Project" height="150" width="150">
+          <div class="container">
+            <h4><a class="projects-link" href="./giphy.html">Giphy</a></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">Holler At Me</section>
+  </main>
+  <footer>
+    Footer
+  </footer>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-  <script src="./assets/javascript/main.js"></script>
-</body>
-
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script> -->
+  <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script> -->
+    <script src="./assets/javascript/main.js"></script>
+  </body>
 </html>
-
-<!-- Reference: http://retrina.com/demo/arshia/colorfull.html#hero -->
