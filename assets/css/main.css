@@ -3,11 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.monogram {
-  font-family: 'Fredoka One', cursive;
-}
-
-#hiya {
+.monogram, #hiya {
   font-family: 'Fredoka One', cursive;
 }
 
@@ -17,11 +13,10 @@ body {
   width: 100vw;
 }
 
-/* Sidebar */
-.sidebar {
-  height: 100vh;
-  min-height: 800px;
-  width: 100px;
+/* nav*/
+.navigation {
+  height: 100px;
+  width: 100vw;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -32,8 +27,6 @@ body {
   flex-direction: column;
   justify-content: center;
   box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.25);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 /* Style sidebar links */
