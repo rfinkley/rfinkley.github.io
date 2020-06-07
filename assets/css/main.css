@@ -3,6 +3,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: #fff;
+}
+
 .monogram {
   font-family: 'Fredoka One', cursive;
 }
@@ -359,10 +363,6 @@ footer {
   line-height: 3.25rem;
   color: #fff;
   text-decoration: none;
-}
-
-#scrollTop > a {
-  color: #fff;
 }
 
 #scrollTop :hover{
