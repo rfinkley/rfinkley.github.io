@@ -361,6 +361,10 @@ footer {
   text-decoration: none;
 }
 
+#scrollTop a {
+  color: #fff;
+}
+
 #scrollTop :hover{
   color: darkcyan;
 }
