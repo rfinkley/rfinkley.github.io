@@ -9,6 +9,8 @@ a {
 
 .monogram {
   font-family: 'Fredoka One', cursive;
+  color: cadetblue;
+  font-size: 3rem;
 }
 
 section {
@@ -28,6 +30,10 @@ header {
   padding: .3rem;
   margin-bottom: 1rem;
   box-shadow: 3px 3px 8px 0px rgba(145, 145, 145, 0.25);
+}
+
+nav, .navbar {
+  display: flex;
 }
 
 nav {
@@ -50,10 +56,6 @@ nav {
 
 .brand {
   display: none
-}
-
-nav, .navbar {
-  display: flex;
 }
 
 .navbar {
@@ -232,6 +234,13 @@ main {
 #portfolio {
   grid-area: portfolio;
   text-align: center;
+  width: 40%;
+  margin: 3rem auto;
+
+}
+
+.projects-link {
+  color: cadetblue;
 }
 
 .projects-container {
@@ -239,6 +248,7 @@ main {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1rem;
+  
 }
 
 .card {
@@ -383,28 +393,48 @@ footer {
 
 
 
-/* @media only screen and (max-width: 768px) {
-  .portrait {
-    position: relative;
-    right: 30px;
-    top: 0px;
+@media only screen and (min-width: 600px ) {
+  .brand {
+    display: block;
   }
-  .home-text {
-    width: 400px;
-    margin-bottom: 3rem;
-  }
-  .content {
-    padding-top: 20px;
-  }
-} */
 
-/* @media only screen and (max-width: 500px) {
-  .portrait {
+  #about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 3rem;
+    grid-template-areas: 
+      "info pic"
+    ;
+    justify-content: space-around;
+    column-gap: 1rem;
+  }
+  
+  .about-pic {
+    grid-area: pic;
+    margin: 0 auto 0 0;
     position: relative;
-    top: 0px;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    z-index: 1;
+    border-radius: 50%;
+    background-image: url("../images/portrait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-  .home-text {
-    width: 280px;
+  
+  .about-info {
+    grid-area: info;
+    margin: 3rem auto;
+    width: 400px;
   }
-} */
+
+  #contact {
+    width: 50%;
+    margin: 3rem auto;
+  }
+
+}
+
 
