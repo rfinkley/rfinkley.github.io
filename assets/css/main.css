@@ -361,7 +361,7 @@ footer {
   text-decoration: none;
 }
 
-#scrollTop a {
+#scrollTop > a {
   color: #fff;
 }
 
