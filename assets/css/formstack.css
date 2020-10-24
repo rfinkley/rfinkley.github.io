@@ -1,0 +1,13 @@
+#iFrameWrapper {
+  margin: 5rem auto;
+  width: 400px;
+}
+
+#ffEmbedFrame {
+  width: 400px;
+  height: 1000px;
+}
+
+body {
+  background-image: url("../images/14092.jpg");
+}
